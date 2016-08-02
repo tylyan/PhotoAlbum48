@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="juanyuk.photoalbum.view.PhotoController">
+   <children>
+      <ScrollPane fx:id="scrollPane" layoutX="200.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="60.0">
+         <content>
+            <TilePane fx:id="tile" hgap="4.0" prefHeight="325.0" prefWidth="550.0" vgap="4.0">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding></TilePane>
+         </content>
+      </ScrollPane>
+      <ButtonBar layoutX="386.0" layoutY="360.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="30.0">
+        <buttons>
+          <Button mnemonicParsing="false" onAction="#addButtonClicked" text="Add" />
+            <Button mnemonicParsing="false" onAction="#editButtonClicked" text="Edit" />
+            <Button mnemonicParsing="false" onAction="#deleteButtonClicked" text="Delete" />
+        </buttons>
+      </ButtonBar>
+      <ButtonBar layoutX="14.0" layoutY="346.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="30.0">
+        <buttons>
+          <Button mnemonicParsing="false" onAction="#slideshowButtonClicked" text="Slideshow" />
+            <Button mnemonicParsing="false" onAction="#backButtonClicked" text="Back" />
+        </buttons>
+      </ButtonBar>
+      <Label fx:id="captionLabel" layoutX="25.0" layoutY="24.0" text="Label" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="albumLabel" contentDisplay="RIGHT" layoutX="742.0" layoutY="25.0" text="Label" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="25.0" />
+      <Button fx:id="createAlbumButton" layoutX="718.0" layoutY="21.0" mnemonicParsing="false" onAction="#createAlbumClicked" text="Create Album" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="20.0" />
+   </children>
+</AnchorPane>

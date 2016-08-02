@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="juanyuk.photoalbum.view.EditPhotoController">
+   <children>
+      <Button layoutX="124.0" layoutY="361.0" mnemonicParsing="false" onAction="#moveButtonClicked" text="Move to Album..." AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="50.0" />
+      <ButtonBar layoutX="67.0" layoutY="312.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+          <Button minWidth="55.0" mnemonicParsing="false" onAction="#addTagButtonClicked" prefHeight="25.0" prefWidth="112.0" text="Add" />
+            <Button mnemonicParsing="false" onAction="#deleteTagButtonClicked" text="Delete" />
+        </buttons>
+      </ButtonBar>
+      <ListView fx:id="tagListView" layoutX="50.0" layoutY="39.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="99.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="75.0" />
+      <Label layoutX="50.0" layoutY="14.0" text="Tags" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0" />
+      <Label fx:id="captionLabel" layoutX="49.0" layoutY="14.0" text="Label" AnchorPane.leftAnchor="49.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="274.0" layoutY="21.0" mnemonicParsing="false" onAction="#captionButtonClicked" text="Change Caption" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="20.0" />
+      <ComboBox fx:id="albumsComboBox" layoutX="198.0" layoutY="361.0" prefWidth="150.0" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="20.0" />
+   </children>
+</AnchorPane>

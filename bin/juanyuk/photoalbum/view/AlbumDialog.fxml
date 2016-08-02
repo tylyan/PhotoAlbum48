@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="175.0" minWidth="300.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="juanyuk.photoalbum.view.AlbumDialogController">
+   <children>
+      <Button layoutX="234.0" layoutY="111.0" mnemonicParsing="false" onAction="#cancelButtonClicked" text="Cancel" AnchorPane.bottomAnchor="10.0" />
+      <Button layoutX="182.0" layoutY="111.0" mnemonicParsing="false" onAction="#submitButtonClicked" text="Submit" AnchorPane.bottomAnchor="10.0" />
+      <TextField fx:id="albumTextField" layoutX="76.0" layoutY="63.0" promptText="Album name" AnchorPane.bottomAnchor="87.0" AnchorPane.leftAnchor="76.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="63.0" />
+      <Label layoutX="76.0" layoutY="46.0" text="Add a new album:" AnchorPane.topAnchor="40.0" />
+      <Label fx:id="statusLabel" layoutX="76.0" layoutY="99.0" AnchorPane.bottomAnchor="59.0" />
+   </children>
+</AnchorPane>

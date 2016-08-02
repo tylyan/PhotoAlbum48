@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="juanyuk.photoalbum.view.AdminController">
+   <children>
+      <Button fx:id="logoutButton" layoutX="133.0" layoutY="361.0" mnemonicParsing="false" onAction="#logoutButtonClicked" prefHeight="25.0" prefWidth="85.0" text="Logout" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="133.0" AnchorPane.rightAnchor="132.0" AnchorPane.topAnchor="361.0" />
+      <ButtonBar layoutX="67.0" layoutY="312.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+          <Button fx:id="createButton" minWidth="55.0" mnemonicParsing="false" onAction="#createButtonClicked" prefHeight="25.0" prefWidth="112.0" text="Create" />
+            <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteButtonClicked" text="Delete" />
+        </buttons>
+      </ButtonBar>
+      <ListView fx:id="userListView" layoutX="50.0" layoutY="39.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="99.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="39.0" />
+   </children>
+</AnchorPane>
